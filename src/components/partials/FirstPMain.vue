@@ -1,0 +1,148 @@
+<template>
+<!-- Prima sezione del main -->
+  <section class="services">
+    <div class="container">
+
+      <!-- Titolo e testo dell asezione -->
+      <div class="section-text">
+        <h6>OUR BUSINESS AREAS</h6>
+        <h2>Excellence in Services</h2>
+        <p>
+          We are leaders in providing consultancy services with a 
+          set of cutting-edge technologies and a team of experienced and renowned professionals. 
+          These are some options that you can hire.
+        </p>
+        <div class="btn">
+          <a href="#"> SEE ALL</a>
+        </div>
+
+      </div>
+
+      <!-- Contenuti principali sezione -->
+
+      <div class="box-container">
+
+        <div class="box">
+          <img src="../../assets/svg/svg-1.svg" alt="">
+          <h3>Audit & Assurance</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="box">
+          <img src="../../assets/svg/svg-2.svg" alt="">
+          <h3>Financial Advisory</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="box">
+          <img src="../../assets/svg/svg-3.svg" alt="">
+          <h3>Analytics and M&A</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="box">
+          <img src="../../assets/svg/svg-4.svg" alt="">
+          <h3>Middle Marketing</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="box">
+          <img src="../../assets/svg/svg-5.svg" alt="">
+          <h3>Legal Consulting</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="box">
+          <img src="../../assets/svg/svg-6.svg" alt="">
+          <h3>Regulatory Risk</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+      </div>
+    </div>
+      
+  </section>
+</template>
+
+<script>
+export default {
+    name:'FirstPMain'
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../../assets/style-scss/variables.scss";
+  .services{
+    background-color:#eef4ed;
+    min-height: 650px;
+    padding-top: 50px;
+    .container{
+      width: 60%;
+      margin: 0 auto;
+    
+      .section-text{
+        position: relative;
+       
+        h2{
+          margin: 20px 0;
+          font-weight: 900;
+          font-size: 40px;
+        }
+        p{
+          width: 750px;
+        }
+        .btn{
+          position: absolute;
+          right: 0;
+          bottom: 30px;
+        
+          a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 14px;
+            border-radius: 2px;
+            background-color: $colorBlueLagon;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .box-container{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        .box{
+          position: relative;
+          width: calc(100% /3 - 20px);
+          margin: 10px;
+          border: 1px solid #000;
+          background-color: $colorWhite;
+          border-radius: 10px;
+          padding: 20px;
+
+          h3{
+            margin: 10px 0px;
+          }
+          .fa-arrow-right{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            color: $colorBlueLagon;
+          }
+          img{
+            width: 30px;
+            filter: invert(36%) sepia(19%) saturate(3322%) hue-rotate(142deg) brightness(98%) contrast(98%);
+          }
+        }
+      }
+    }
+  }
+</style>
