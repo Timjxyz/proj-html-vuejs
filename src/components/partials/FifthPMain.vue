@@ -1,4 +1,6 @@
 <template>
+
+<!-- Sezione con il form e contatti -->
   <section class="form">
       
     <div class="left-container">
@@ -14,8 +16,9 @@
         <!-- Contenitore box item -->
         <div class="box-container">
             <div class="box">
-                <form>
+                <form class="name-form">
                     <input type="text" placeholder="Name">
+                    <img src="../../assets/img/image (1).png" alt="">
                 </form>
             </div>
             <div class="box">
@@ -33,10 +36,9 @@
             <div class="box">
                <form>
                     <select >
-                        <option value="">More Info</option>
                        <option value="">More Info</option>
-                       <option value="">More Info</option>
-                       <option value="">More Info</option>
+                       <option value="">To Sign Up</option>
+                       <option value="">Other</option>
                     </select>
                 </form>
                 
@@ -51,7 +53,40 @@
 
     </div>
     <div class="right-container">
-      
+        <div class="contact-text">
+            <h3>Example Inc.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p> Magnam rem culpa quia earum error obcaecati rerum.</p>
+        </div>
+
+        <nav class="info-contacts">
+            <ul>
+                <li>
+                     <i class="fa-solid fa-phone"></i>
+                     <a href="#">
+                        +1(305) 1234-5678
+                    </a> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#">
+                        hello@example.com
+                    </a>
+                </li>
+                <li>
+                     <i class="fa-solid fa-location-dot"></i>
+                     <a href="#">
+                        Main Avenue, 987
+                    </a> 
+                </li>
+
+                <li>
+                    <div class="btn">
+                        <a href="#"> VIEW MAP</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </div>
   </section>
 </template>
@@ -65,9 +100,7 @@ export default {
 <style scoped lang="scss">
     @import "../../assets/style-scss/variables.scss";
     .form{
-        margin-top: 100px;
-        height: 700px;
-       
+        margin: 100px 0px;
         display: flex;
 
         .left-container{
@@ -99,6 +132,16 @@ export default {
                 margin-top: 30px;
                 display: flex;
                 flex-wrap: wrap;
+
+                .name-form{
+                    position: relative;
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        right: 30px;
+                        transform: translateY(-50%);
+                    }
+                }
                 input{
                     width: 90%;
                     background-color:#ececec;
@@ -109,9 +152,11 @@ export default {
                 select{
                     padding: 10px;
                     width: 90%;
-                    background-color:#ececec;
-                    color:$MCcolorGrayNurse;
+                    background-color:#ececec; 
                     border-radius: 5px;
+                    option{
+                        color:$MCcolorGrayNurse;
+                    }
                 }
                 .text-area{
                     width: 100%;
@@ -165,12 +210,56 @@ export default {
         }
         .right-container{
             width:50%;
-            
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            margin-top: 50px;
+            padding-left: 50px;
+
+            .contact-text{
+                width: 48%;
+
+                p{
+                    margin: 20px 0px;
+                }
             }
+
+            .info-contacts{
+                ul{
+                    li{
+                        color: $colorBlueLagon;
+                        list-style: none;
+                        margin: 10px 0px;
+                        .fa-solid{
+                            font-size: 20px;
+                            margin-right: 10px;
+                            padding: 10px;
+                            height: 40px;
+                            width: 40px;
+                            vertical-align: middle;
+                            text-align: center;
+                            background-color: rgba(3,132,132,0.2);
+                            border-radius: 50%;
+                        }
+                        a{
+                            color: $colorBlueLagon;
+                        }
+
+                        .btn{
+                            margin-right: 10px;
+                            display: inline-block;
+                            margin-top: 30px;
+                            a{
+                                text-decoration: none;
+                                padding: 5px 30px;
+                                border-radius: 2px;
+                                border: 1px solid  $colorBlueLagon;
+                                margin-bottom: 10px;
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+           
         }
     }
 
