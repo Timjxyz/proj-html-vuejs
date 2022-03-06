@@ -6,7 +6,7 @@
         <!-- Titolo della sezione -->
         <div class="section-text">
             <h6>OBOUT THE NETWORK</h6>
-            <h2>The Company</h2>
+            <h2><span class="secondoevidenziatore">The</span> Company</h2>
             <p>
                 For 12 years we have been providing audit and warranty, 
                 financial advice, taxes and related service to select clients.
@@ -39,10 +39,10 @@
                 <p>Lorem ipsum dolor, sit amet consectetur, lorem</p>
                 
             </div>
-            <div class="btn">
+            <div class="btn btn-green btn-hover">
                 <a href="#"> GET IN TOUCH</a>
             </div>
-            <div class="btn">
+            <div class="btn btn-transparent btn-hover">
                 <a href="#"> READ MORE</a>
             </div>
         </div>
@@ -65,7 +65,7 @@ export default {
 @import "../../assets/style-scss/variables.scss";
     .company{
         height: 700px;
-        background-color: $MCcolorShark;
+        background-color:#111117;
         display: flex;
 
         .left-container{
@@ -101,7 +101,6 @@ export default {
                     position: relative;
                     width: calc(100% /2 - 40px);
                     margin: 20px;
-                    
 
                     h3{
                         padding-left: 10px;
@@ -115,23 +114,15 @@ export default {
                     .fa-solid{
                         font-size: 30px;
                         color: $colorBlueLagon;
+                        
                     }
                }
 
                .btn{
-                     margin-right: 10px;
-                     display: inline-block;
-                     margin-top: 30px;
+                    margin-right: 30px;
+                    margin-top: 30px;
                 }
 
-               a{
-                    text-decoration: none;
-                    color: #fff;
-                    padding: 5px 14px;
-                    border-radius: 2px;
-                    background-color: $colorBlueLagon;
-                    margin-bottom: 10px;
-               }
            }
           
         }

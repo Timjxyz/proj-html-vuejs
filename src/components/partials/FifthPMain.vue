@@ -7,7 +7,7 @@
         <!-- Titolo della sezione -->
         <div class="section-text">
             <h6>SEND A MESSAGE</h6>
-            <h2>Get in Thouch</h2>
+            <h2>Get in <span class="evidenziatore">Thouch</span></h2>
             <p>
                 We will respond to your message as possible.
             </p>
@@ -46,7 +46,7 @@
             <div class="text-area">
                 <textarea  rows="10"></textarea>
             </div>
-            <div class="btn">
+            <div class="btn btn-green">
                 <a href="#"> SEND</a>
             </div>
         </div>
@@ -81,7 +81,7 @@
                 </li>
 
                 <li>
-                    <div class="btn">
+                    <div class="btn btn-transparent">
                         <a href="#"> VIEW MAP</a>
                     </div>
                 </li>
@@ -145,7 +145,7 @@ export default {
                 input{
                     width: 90%;
                     background-color:#ececec;
-                    color:$MCcolorGrayNurse;
+                    color:$colorPumice;
                     padding: 10px;
                     border-radius: 5px;
                 }
@@ -155,7 +155,7 @@ export default {
                     background-color:#ececec; 
                     border-radius: 5px;
                     option{
-                        color:$MCcolorGrayNurse;
+                        color:$colorPumice;
                     }
                 }
                 .text-area{
@@ -164,7 +164,7 @@ export default {
                     textarea{
                         background-color:#ececec;
                         width: 95%;
-                        color:$MCcolorGrayNurse;
+                        color:$colorPumice;
                         border-radius: 5px;
                         
                     }
@@ -192,18 +192,15 @@ export default {
                }
 
                .btn{
-                     margin-right: 10px;
-                     display: inline-block;
-                     margin-top: 30px;
+                    margin-right: 10px;
+                    display: inline-block;
+                    margin-top: 30px;
                 }
 
                a{
-                    text-decoration: none;
-                    color: #fff;
-                    padding: 5px 14px;
-                    border-radius: 2px;
-                    background-color: $colorBlueLagon;
-                    margin-bottom: 10px;
+                   
+                padding: 5px 14px;
+
                }
            }
           
@@ -246,13 +243,8 @@ export default {
                             margin-right: 10px;
                             display: inline-block;
                             margin-top: 30px;
-                            a{
-                                text-decoration: none;
-                                padding: 5px 30px;
-                                border-radius: 2px;
-                                border: 1px solid  $colorBlueLagon;
-                                margin-bottom: 10px;
-
+                            a{                                
+                                padding: 5px 16px;
                             }
                         }
                     }

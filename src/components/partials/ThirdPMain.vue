@@ -4,13 +4,13 @@
           <!-- Titolo della sezione -->
           <div class="section-title">
             <h6>WE DO MORE FORE EVERYONE</h6>
-            <h2>Actions & Projects</h2>
+            <h2>Actions & <span class="evidenziatore">Projects</span></h2>
 
           </div>
             <!-- Barra di navigazione all'internzo della sezione -->
           <nav>
               <ul>
-                  <li><a href="#">ALL</a></li>
+                  <li><a href="#"><span class="evidenziatore">ALL</span></a></li>
                   <li><a href="#">INSTITUTIONAL</a></li>
                   <li><a href="#">SOCIAL</a></li>
                   <li><a href="#">EVENTS</a></li>
@@ -20,31 +20,73 @@
               </ul>
           </nav>
 
-            <!-- Conenitore box -->
+            <!-- Conenitore box con immagini-->
           <div class="box-container">
+              <!-- Box 1 -->
                 <div class="box">
                     <img src="../../assets/img/project-1.jpg" alt="">
-                    <h3>Academic professional program in social media</h3>
+                    <a href="#">
+                       <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="text-img">
+                       <h3>Academic professional program in social media</h3>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
+                 <!-- Box 2 -->
                 <div class="box">
                     <img src="../../assets/img/project-2.jpg" alt="">
-                    <h3>Presidet's speech at the annual meeting</h3>
+                    <a href="#">
+                       <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="text-img">
+                       <h3>Presidet's speech at the annual meeting</h3>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
+                 <!-- Box 3 -->
                 <div class="box">
                     <img src="../../assets/img/project-3.jpg" alt="">
-                    <h3>International business trip in Shanghai</h3>
+                    <a href="#">
+                       <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="text-img">
+                        <h3>International business trip in Shanghai</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
+                 <!-- Box 4 -->
                 <div class="box">
                     <img src="../../assets/img/project-4.jpg" alt="">
-                    <h3>Technology workshop whith education theme</h3>
+                    <a href="#">
+                       <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="text-img">
+                       <h3>Technology workshop whith education theme</h3>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
+                 <!-- Box 5 -->
                 <div class="box">
                     <img src="../../assets/img/project-5.jpg" alt="">
-                    <h3>Donation of clothes and food the partner NGO</h3>
+                    <a href="#">
+                       <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="text-img">
+                      <h3>Donation of clothes and food the partner NGO</h3>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
+                <!-- Box 6 -->
                 <div class="box">
                     <img src="../../assets/img/project-6.jpg" alt="">
-                    <h3>Confraternization of the procurement team</h3>
+                    <a href="#">
+                       <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="text-img">
+                        <h3>Confraternization of the procurement team</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
           </div>
       </div>
@@ -63,14 +105,16 @@ export default {
         min-height: 600px;
         margin-top: 100px;
         .container{
-            width: 70%;
-            margin:auto;
             text-align: center;
             .section-title{
                 margin-bottom: 20px;
                 h6{
                     margin-bottom: 20px;
                     color: $colorBlueLagon;
+                }
+                h2{
+                    font-weight: 800;
+                    font-size: 30px;
                 }
             }
             nav{
@@ -81,6 +125,9 @@ export default {
                         a{
                            margin: 10px 20px;
                            color: $colorPumice;
+                           .evidenziatore{
+                               padding: 10px;
+                           }
                         }
                     }
                 }
@@ -98,19 +145,45 @@ export default {
                     background-color: $colorWhite;
                     border-radius: 10px;
                     overflow: hidden;
-                  
-                    h3{
+                    &:hover .text-img p{
+                        display: block;
+                    }
+
+                    &:hover img{
+                        filter: blur(2px);
+                        
+                    }
+                    &:hover .fa-arrow-right{
+                        display: block;
+                    }
+                    .fa-arrow-right{
+                        position: absolute;
+                        color: $colorWhite;
+                        top: 20px;
+                        right: 20px;
+                        font-size: 24px;
+                        display: none;
+                    }
+
+                    .text-img{
                         margin: 10px 0px;
                         position: absolute;
                         bottom: 10px;
                         text-align: center;
                         color: $colorWhite;
-                        font-size: 24px;
+                        font-size: 20px;           
+
+                        p{
+                           display: none;
+                            
+                        }
                     }
+                    
                     img{
                        width: 100%;
                        height: 100%;
                        object-fit: cover;
+
                     }
                 }
             }

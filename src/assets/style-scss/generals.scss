@@ -1,3 +1,6 @@
+//Regole generali
+
+//Importazione del link per font da google font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
@@ -7,6 +10,12 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: 70%;
+    margin:auto;
+}
+
 .d-flex{
     display: flex;
 }
@@ -19,3 +28,53 @@ li{
     list-style: none;
 }
 
+//Regole per evidenziare 
+.evidenziatore{
+    background-color: #d5e7e8;
+    color:#038484;
+    
+}
+
+.secondoevidenziatore{
+    color:#fff;
+    background-color:#0e272d;
+    padding:0px 10px;
+}
+
+//Regole generali dei bottoni
+.btn{
+    display: inline;
+    padding:8px 12px;
+    border-radius: 4px;
+}
+.btn-green{
+    
+    background-color: #038484;
+    color: #fff;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.btn-transparent{
+    padding:8px 12px;
+    border: 1px solid #038484;
+
+    a{
+        
+        text-decoration: none;
+        color: #038484;
+        
+    }
+}
+
+//Regole di hover sui bottoni
+.btn-hover:hover{
+    background-color: #00a6a6;
+    a{
+        color: #fff;
+    }
+
+}

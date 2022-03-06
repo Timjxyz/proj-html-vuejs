@@ -4,7 +4,7 @@
           <div class="container">
                 <div class="title-section">  
                     <h6>WHAT ARE WE DOING</h6>
-                    <h2>Result in numbers</h2>
+                    <h2><span class="secondoevidenziatore">Result</span> in numbers</h2>
                 </div>
                 <nav>
                     <li>
@@ -76,7 +76,6 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/style-scss/variables.scss";
     .container{
-        width: 70%;
         margin: 20px auto;
         text-align: center;
         height: 100%;

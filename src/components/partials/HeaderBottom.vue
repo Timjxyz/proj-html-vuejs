@@ -10,24 +10,16 @@
             <!-- Parte destra con barra di navigazione -->
             <nav>
                 <ul>
+                    <NavHeader
+                        v-for="(navItem, index) in navItems" 
+                        :key="index"
+                        :nav="navItem.title"
+                    />
                     <li>
-                        <a href="#">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#">SERVICES</a>
-                    </li>
-                    <li>
-                        <a href="#">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="#">PROJECTS</a>
-                    </li>
-                    <li>
-                        <a href="#">RESULTS</a>
-                    </li>
-                    <li>
-                        <a href="#">GET IN TOUCH</a>
-                    </li>
+                        <div class=" btn btn-green btn-hover">
+                            <a href="#"> GET IN TOUCH</a>
+                         </div>
+                    </li> 
                 </ul>
 
             </nav>
@@ -40,18 +32,18 @@
         <div class="jumbotron-bg"></div>
 
         <div class="text-jumbo">
-            <h1>Ready Team</h1>
+            <h1>Ready <span class="evidenziatore">Team</span></h1>
             <p>No matter what your company needs, we will be ready to assist you in the best possible way.</p>
-            <div class="btn">
+            <div class=" btn btn-green btn-hover">
               <a href="#"> GET IN TOUCH</a>
             </div>
-            <div class="btn">
+            <div class=" btn btn-transparent btn-hover">
                 <a href="#">READ MORE</a>
             </div>
         </div>
         <div class="select">
             <div class="pipe"></div>
-            <div class="pipe"></div>
+            <div class="pipe pipe-active"></div>
             <div class="pipe"></div>
         </div>
     </div>
@@ -61,8 +53,34 @@
 </template>
 
 <script>
+import NavHeader from '../partials/NavHeader.vue'
+
 export default {
-    name:'HeaderBottom'
+    name:'HeaderBottom',
+    components:{
+        NavHeader
+    },
+    data(){
+        return{
+            navItems:[
+                {
+                    "title":"HOME"
+                },
+                {
+                    "title":"SERVICES"
+                },
+                {
+                    "title":"ABOUT"
+                },
+                {
+                    "title":"PROJECTS"
+                },
+                {
+                    "title":"RESULTS"
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -72,8 +90,6 @@ export default {
         padding-top: 20px;
        
         .container{
-            margin: auto;
-            width: 70%;
             align-items: center;
             justify-content: space-between;
             height: 100%;
@@ -92,18 +108,21 @@ export default {
                         li{
                             margin: 0 20px;
                             display: inline-block;
-                            a{
-                                text-decoration: none;
-                                color: $ColorWoodSmoke;
-                            }
                             
                         }
                     }
-                }
-                
+                }  
             }
 
         }
+        .btn{
+            margin-right: 10px;
+
+            a{                  
+                text-decoration: none;
+            }
+        }
+
         .jumbotron{
              position: relative;
             .jumbotron-bg{
@@ -120,23 +139,16 @@ export default {
                 transform: translate(-50%, -50%);
                 text-align: center;
                 width: 340px;
+                h1{
+                    font-size: 60px;
+                    font-weight: 900;
+                }
 
                 p{
                     margin-bottom: 30px;
-                }
-                .btn{
-                     margin-right: 10px;
-                     display: inline-block;
+                    color:$colorGravel;
                 }
 
-                a{
-                    color: #fff;
-                    text-decoration: none;
-                    padding: 12px;
-                    border-radius: 4px;
-                    background-color: #038484;
-                   
-                }
             }
             .select{
                 position: absolute;
@@ -150,6 +162,9 @@ export default {
                     width: 10px;
                     border: 1px solid $colorBlueLagon;
                     border-radius: 50px;
+                }
+                .pipe-active{
+                    background-color: $colorBlueLagon;
                 }
             }
 

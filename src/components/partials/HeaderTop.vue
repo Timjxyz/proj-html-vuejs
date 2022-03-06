@@ -57,7 +57,7 @@ export default {
 
     .header-top{
         height: 50px;
-        background-color: $MDcolorBigStone;
+        background-color:#21333e;
 
         a{
             color: $MCcolorGrayNurse;
@@ -65,8 +65,6 @@ export default {
         }
 
         .container{
-            margin: auto;
-            width: 70%;
             align-items: center;
             justify-content: space-between;
             height: 100%;

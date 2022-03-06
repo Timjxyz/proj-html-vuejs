@@ -1,5 +1,9 @@
 <template>
+
+<!-- PARTE SUPERIORE DEL FOOTER -->
     <div class="footer-top">
+
+        <!-- Contenitore del footer -->
         <div class="container">
 
             <div class="box">
@@ -7,7 +11,7 @@
                     <img src="../../assets/svg/svg-7.svg" alt="">
                 </div>
                 <p>A Functional HTML Template for Corporate & Business</p>
-                <nav class="info-contacts">
+                <nav class="info-nav info-contacts">
                     <ul>
                         <li>
                             <i class="fa-solid fa-phone"></i>
@@ -29,7 +33,7 @@
                         </li>
 
                         <li>
-                            <div class="btn">
+                            <div class="btn btn-transparent btn-hover">
                                 <a href="#"> GET IN TOUCH</a>
                             </div>
                         </li>
@@ -38,7 +42,7 @@
             </div>
             <div class="box list">
                 <h2>About</h2>
-                <nav class="info-contacts">
+                <nav class="info-nav">
                     <ul>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
@@ -68,63 +72,63 @@
                 </nav>
             </div>
             <div class="box list">
-                <h2>About</h2>
-                <nav class="info-contacts">
+                <h2>Services</h2>
+                <nav class="info-nav">
                     <ul>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> The Company</a>
+                            <a href="#">Audit & Assurance</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Institutional</a>
+                            <a href="#">Financial Advisory</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Social & Events</a>
+                            <a href="#">Analytics M&A</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Innovation</a>
+                            <a href="#">Middle Marketing</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Enviroment</a>
+                            <a href="#">Legal Consulting</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Technology</a>
+                            <a href="#">Regular Risk</a>
                         </li>
                     </ul>
                 </nav>
             </div>  
             <div class="box list">
-                <h2>About</h2>
-                <nav class="info-contacts">
+                <h2>Support</h2>
+                <nav class="info-nav">
                     <ul>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> The Company</a>
+                            <a href="#">Responsibility</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Institutional</a>
+                            <a href="#">Terms of Use</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Social & Events</a>
+                            <a href="#">About Cookies</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Innovation</a>
+                            <a href="#">Privacy Policy</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Enviroment</a>
+                            <a href="#">Accessibility</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-angle-right"></i>
-                            <a href="#"> Technology</a>
+                            <a href="#">Information</a>
                         </li>
                     </ul>
                 </nav>
@@ -150,8 +154,6 @@ export default {
         background-color: $ColorWoodSmoke;
 
         .container{
-            width: 70%;
-            margin: auto;
             display: flex;
             .box{
                 margin-top: 100px;
@@ -165,17 +167,23 @@ export default {
 
                 }
                 
-
                 h2{
                     color:$colorWhite;
                 }
+
                 img{
                     width: 150px;
+                    margin-bottom: 20px;
                 }
                 p{
                     color: $colorGravel;
                 }
                 .info-contacts{
+                    li{
+                        padding: 5px 0px;
+                    }
+                }
+                .info-nav{
                      
                     ul{
                         li{
@@ -194,14 +202,7 @@ export default {
                                 margin-right: 10px;
                                 display: inline-block;
                                 margin-top: 30px;
-                                a{
-                                    text-decoration: none;
-                                    padding: 5px 30px;
-                                    border-radius: 2px;
-                                    border: 1px solid  $colorBlueLagon;
-                                    margin-bottom: 10px;
-
-                                }
+                              
                             }
                         }
                     }

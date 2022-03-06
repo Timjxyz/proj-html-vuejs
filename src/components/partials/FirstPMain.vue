@@ -6,13 +6,13 @@
       <!-- Titolo e testo dell asezione -->
       <div class="section-text">
         <h6>OUR BUSINESS AREAS</h6>
-        <h2>Excellence in Services</h2>
+        <h2>Excellence in <span class="evidenziatore">Services</span></h2>
         <p>
           We are leaders in providing consultancy services with a 
           set of cutting-edge technologies and a team of experienced and renowned professionals. 
           These are some options that you can hire.
         </p>
-        <div class="btn">
+        <div class=" btn btn-green">
           <a href="#"> SEE ALL</a>
         </div>
 
@@ -83,7 +83,7 @@ export default {
     min-height: 650px;
     padding-top: 50px;
     .container{
-      width: 60%;
+     
       margin: 0 auto;
     
       .section-text{
@@ -100,16 +100,7 @@ export default {
         .btn{
           position: absolute;
           right: 0;
-          bottom: 30px;
-        
-          a{
-            text-decoration: none;
-            color: #fff;
-            padding: 5px 14px;
-            border-radius: 2px;
-            background-color: $colorBlueLagon;
-            margin-bottom: 10px;
-          }
+          bottom: 0px;         
         }
       }
 
@@ -122,10 +113,15 @@ export default {
           position: relative;
           width: calc(100% /3 - 20px);
           margin: 10px;
-          border: 1px solid #000;
           background-color: $colorWhite;
           border-radius: 10px;
           padding: 20px;
+
+          &:hover .fa-arrow-right{
+            background-color:#7cd1d1;
+            border-radius: 50%;
+            
+          }
 
           h3{
             margin: 10px 0px;
@@ -136,6 +132,7 @@ export default {
             right: 20px;
             font-size: 20px;
             color: $colorBlueLagon;
+            padding: 10px;
           }
           img{
             width: 30px;
