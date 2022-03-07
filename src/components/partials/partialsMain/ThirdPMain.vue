@@ -1,4 +1,5 @@
 <template>
+<!-- Sezione sulle attività svolte -->
   <section class="project">
       <div class="container">
           <!-- Titolo della sezione -->
@@ -20,7 +21,7 @@
               </ul>
           </nav>
 
-            <!-- Conenitore box con immagini-->
+            <!-- Conenitore box-attività con immagini-->
           <div class="box-container">
               <!-- Box 1 -->
                 <div class="box">
@@ -108,10 +109,7 @@ export default {
             text-align: center;
             .section-title{
                 margin-bottom: 20px;
-                h6{
-                    margin-bottom: 20px;
-                    color: $colorBlueLagon;
-                }
+               
                 h2{
                     font-weight: 800;
                     font-size: 30px;

@@ -1,4 +1,5 @@
 <template>
+<!-- Componente per rendere dinamico il nav del footer -->
   <div class="box list">
                 <h2>{{title}}</h2>
                 <nav class="info-nav">

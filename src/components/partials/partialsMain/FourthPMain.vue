@@ -1,4 +1,5 @@
 <template>
+<!-- Sezione con i dati raccolti sul gruppo -->
   <section class="result">
       <div class="top-section">
           <div class="container">
@@ -34,6 +35,8 @@
                 </nav>
           </div>
       </div>
+
+      <!-- Sezione con logo dei vari sponsor -->
       <div class="bottom-section">
             <div class="box-container">
                     <div class="box">
@@ -92,10 +95,7 @@ export default {
 
             .title-section{
                 padding-top: 100px;
-                h6{
-                    margin-bottom: 20px;
-                    color: $colorBlueLagon;
-                }
+               
                 h2{
                     margin: 20px 0;
                     font-weight: 900;

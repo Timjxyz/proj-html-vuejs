@@ -5,13 +5,14 @@
 
         <!-- Contenitore del footer -->
         <div class="container">
-
+            <!-- Box con dati di contatto -->
             <div class="box">
                 <div class="logo-footer">
                     <img src="../../../assets/svg/svg-7.svg" alt="">
                 </div>
                 <p>A Functional HTML Template for Corporate & Business</p>
-                <nav class="info-nav info-contacts">
+
+                <nav class="info-contacts">
                     <ul>
                         <li>
                             <i class="fa-solid fa-phone"></i>
@@ -157,6 +158,7 @@ export default {
 
         .container{
             display: flex;
+        
             .box{
                 margin-top: 100px;
                 width: calc(100% / 4 - 40px);

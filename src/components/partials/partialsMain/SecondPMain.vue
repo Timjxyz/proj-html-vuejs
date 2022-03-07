@@ -1,5 +1,5 @@
 <template>
-<!-- Seconda sezione del menù -->
+<!-- Sezione sulle caratteristiche della compagnia -->
   <section class="company">
 
     <div class="left-container">
@@ -13,32 +13,37 @@
             </p>
             
         </div>
-        <!-- Contenitore box item -->
+        <!-- Contenitore box certificati -->
         <div class="box-container">
+            <!-- Box 1 -->
             <div class="box">
                 <i class="fa-solid fa-award"></i>
                 <h3>Tradition</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur, lorem</p>
                 
             </div>
+             <!-- Box 2 -->
             <div class="box">
                 <i class="fa-solid fa-lock"></i>
                 <h3>Security</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur, lorem</p>
                 
             </div>
+             <!-- Box 3 -->
             <div class="box">
                 <i class="fa-solid fa-pen-to-square"></i>
                 <h3>Certificate</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur, lorem</p>
                 
             </div>
+             <!-- Box 4 -->
             <div class="box">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <h3>Expertise</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur, lorem</p>
                 
             </div>
+             <!-- Bottoni della sezione -->
             <div class="btn btn-green btn-hover">
                 <a href="#"> GET IN TOUCH</a>
             </div>
@@ -48,6 +53,8 @@
         </div>
 
     </div>
+
+    <!-- Parte destra della sezione con immagine di sfondo -->
     <div class="right-container">
         <img src="../../../assets/img/about-4.jpg" alt="">
     </div>
@@ -67,7 +74,7 @@ export default {
         height: 700px;
         background-color:#111117;
         display: flex;
-
+        //Regole parte destra della sezione
         .left-container{
             width: 50%;
             margin-top: 50px;
@@ -76,10 +83,6 @@ export default {
                 width: 65%;
                 margin-left: auto;
 
-                h6{
-                    color: $colorBlueLagon;
-                    margin-bottom: 20px;
-                }
                 h2{
                     color:$colorWhite;
                     font-weight: 900;
@@ -126,6 +129,8 @@ export default {
            }
           
         }
+
+        //Regole sull'imagine di sfondo della parte destra della sezione
         .right-container{
             width:50%;
             

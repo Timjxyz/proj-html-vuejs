@@ -13,7 +13,7 @@
             </p>
             
         </div>
-        <!-- Contenitore box item -->
+        <!-- Contenitore box item  e form-->
         <div class="box-container">
             <div class="box">
                 <form class="name-form">
@@ -36,9 +36,10 @@
             <div class="box">
                <form>
                     <select >
-                       <option value="">More Info</option>
-                       <option value="">To Sign Up</option>
-                       <option value="">Other</option>
+                       <option value="moreInfo">More Info</option>
+                       <option value="toSignUp">To Sign Up</option>
+                       <option value="support">Support</option>
+                       <option value="other">Other</option>
                     </select>
                 </form>
                 
@@ -52,6 +53,8 @@
         </div>
 
     </div>
+
+    <!-- Parte destra della sezione con lista contatti -->
     <div class="right-container">
         <div class="contact-text">
             <h3>Example Inc.</h3>
@@ -107,14 +110,11 @@ export default {
             width: 50%;
             margin-top: 50px;
             
+            //Parte superiore sx con regole titolo della sezione e testo
             .section-text{
                 width: 65%;
                 margin-left: auto;
 
-                h6{
-                    color: $colorBlueLagon;
-                    margin-bottom: 20px;
-                }
                 h2{
                     color:$ColorWoodSmoke;
                     font-weight: 900;
@@ -122,10 +122,11 @@ export default {
                     margin-bottom: 20px;
                 }
                 p{
-                    color:$MCcolorGrayNurse;
+                    color:#939ca1;
                 }
             }
 
+            //Parte sx della sezione con regole del form
              .box-container{
                 width: 65%;
                 margin-left: auto;
@@ -205,6 +206,8 @@ export default {
            }
           
         }
+
+        // Regole parte destra della sezione con lista contatti
         .right-container{
             width:50%;
             margin-top: 50px;

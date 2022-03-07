@@ -1,4 +1,5 @@
 <template>
+<!-- Parte inferiore del footer -->
   <div class="footer-bottom">
     <div class="container">
       <p>Enjoy the low price. We are tracking any intention of piracy.</p>

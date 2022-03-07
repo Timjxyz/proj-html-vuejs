@@ -27,7 +27,7 @@
         </div>
 
     </div>
-
+    <!-- Sezione jumbotron -->
     <div class="jumbotron">
         <div class="jumbotron-bg"></div>
 
@@ -88,12 +88,14 @@ export default {
 @import "../../../assets/style-scss/variables.scss";
     .header-bottom{
         padding-top: 20px;
+        background-image: url("../../../assets/img/bg-jumbo.jpg");
+        
        
         .container{
             align-items: center;
             justify-content: space-between;
             height: 100%;
-
+            //Regole parte nav
             .header-nav{
                 align-items: center;
                 justify-content: space-between;
@@ -122,7 +124,7 @@ export default {
                 text-decoration: none;
             }
         }
-
+        //Regole sezione jumbotron
         .jumbotron{
              position: relative;
             .jumbotron-bg{
@@ -146,7 +148,7 @@ export default {
 
                 p{
                     margin-bottom: 30px;
-                    color:$colorGravel;
+                    color:#939ca1;
                 }
 
             }

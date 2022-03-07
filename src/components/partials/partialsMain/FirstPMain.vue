@@ -1,5 +1,5 @@
 <template>
-<!-- Prima sezione del main -->
+<!-- Prima sezione del main con elencati alcuni servizi  -->
   <section class="services">
     <div class="container">
 
@@ -18,10 +18,10 @@
 
       </div>
 
-      <!-- Contenuti principali sezione -->
+      <!-- Contenuti box dei vari servizi -->
 
       <div class="box-container">
-
+        <!-- Box 1 -->
         <div class="box">
           <img src="../../../assets/svg/svg-1.svg" alt="">
           <h3>Audit & Assurance</h3>
@@ -29,6 +29,7 @@
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
+        <!-- Box 2 -->
         <div class="box">
           <img src="../../../assets/svg/svg-2.svg" alt="">
           <h3>Financial Advisory</h3>
@@ -36,6 +37,7 @@
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
+        <!-- Box 3 -->
         <div class="box">
           <img src="../../../assets/svg/svg-3.svg" alt="">
           <h3>Analytics and M&A</h3>
@@ -43,6 +45,7 @@
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
+        <!-- Box 4 -->
         <div class="box">
           <img src="../../../assets/svg/svg-4.svg" alt="">
           <h3>Middle Marketing</h3>
@@ -50,6 +53,7 @@
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
+        <!-- Box 5 -->
         <div class="box">
           <img src="../../../assets/svg/svg-5.svg" alt="">
           <h3>Legal Consulting</h3>
@@ -57,6 +61,7 @@
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
+        <!-- Box 6 -->
         <div class="box">
           <img src="../../../assets/svg/svg-6.svg" alt="">
           <h3>Regulatory Risk</h3>
@@ -78,6 +83,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../../assets/style-scss/variables.scss";
+
+  p{
+    color:#939ca1;
+  }
   .services{
     background-color:#eef4ed;
     min-height: 650px;
@@ -91,7 +100,7 @@ export default {
         position: relative;
        
         h2{
-          margin: 20px 0;
+          margin-bottom: 20px;
           font-weight: 900;
           font-size: 40px;
         }
