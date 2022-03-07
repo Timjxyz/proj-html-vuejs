@@ -37,27 +37,27 @@
       <div class="bottom-section">
             <div class="box-container">
                     <div class="box">
-                        <img src="../../assets/img/logo-4.png" alt="">
+                        <img src="../../../assets/img/logo-4.png" alt="">
 
                     </div>
                     <div class="box">
-                        <img src="../../assets/img/logo-5.png" alt="">
+                        <img src="../../../assets/img/logo-5.png" alt="">
 
                     </div>
                     <div class="box">
-                        <img src="../../assets/img/logo-1.png" alt="">
+                        <img src="../../../assets/img/logo-1.png" alt="">
 
                     </div>
                     <div class="box">
-                        <img src="../../assets/img/logo-2.png" alt="">
+                        <img src="../../../assets/img/logo-2.png" alt="">
 
                     </div>
                     <div class="box">
-                        <img src="../../assets/img/logo-3.png" alt="">
+                        <img src="../../../assets/img/logo-3.png" alt="">
 
                     </div>
                     <div class="box">
-                        <img src="../../assets/img/logo-4.png" alt="">
+                        <img src="../../../assets/img/logo-4.png" alt="">
 
                     </div>
 
@@ -74,7 +74,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/style-scss/variables.scss";
+@import "../../../assets/style-scss/variables.scss";
     .container{
         margin: 20px auto;
         text-align: center;
@@ -84,7 +84,7 @@ export default {
     .result{
         height: 600px;
         .top-section{
-            background-image: url("../../assets/img/bg-7.jpg");
+            background-image: url("../../../assets/img/bg-7.jpg");
             background-size: cover;
             background-position: center;
             height: 500px;

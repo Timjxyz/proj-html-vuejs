@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import FirstPMain from './partials/FirstPMain.vue';
-import SecondPMain from './partials/SecondPMain.vue';
-import ThirdPMain from './partials/ThirdPMain.vue';
-import FourthPMain from './partials/FourthPMain.vue';
-import FifthPMain from './partials/FifthPMain.vue';
+import FirstPMain from './partials/partialsMain/FirstPMain.vue';
+import SecondPMain from './partials/partialsMain/SecondPMain.vue';
+import ThirdPMain from './partials/partialsMain/ThirdPMain.vue';
+import FourthPMain from './partials/partialsMain/FourthPMain.vue';
+import FifthPMain from './partials/partialsMain/FifthPMain.vue';
 export default {
     name:'MyMain',
     components:{

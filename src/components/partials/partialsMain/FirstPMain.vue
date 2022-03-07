@@ -23,42 +23,42 @@
       <div class="box-container">
 
         <div class="box">
-          <img src="../../assets/svg/svg-1.svg" alt="">
+          <img src="../../../assets/svg/svg-1.svg" alt="">
           <h3>Audit & Assurance</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
         <div class="box">
-          <img src="../../assets/svg/svg-2.svg" alt="">
+          <img src="../../../assets/svg/svg-2.svg" alt="">
           <h3>Financial Advisory</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
         <div class="box">
-          <img src="../../assets/svg/svg-3.svg" alt="">
+          <img src="../../../assets/svg/svg-3.svg" alt="">
           <h3>Analytics and M&A</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
         <div class="box">
-          <img src="../../assets/svg/svg-4.svg" alt="">
+          <img src="../../../assets/svg/svg-4.svg" alt="">
           <h3>Middle Marketing</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
         <div class="box">
-          <img src="../../assets/svg/svg-5.svg" alt="">
+          <img src="../../../assets/svg/svg-5.svg" alt="">
           <h3>Legal Consulting</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
         <div class="box">
-          <img src="../../assets/svg/svg-6.svg" alt="">
+          <img src="../../../assets/svg/svg-6.svg" alt="">
           <h3>Regulatory Risk</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,  </p>
           <i class="fa-solid fa-arrow-right"></i>
@@ -77,11 +77,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/style-scss/variables.scss";
+@import "../../../assets/style-scss/variables.scss";
   .services{
     background-color:#eef4ed;
     min-height: 650px;
     padding-top: 50px;
+    padding-bottom: 100px;
     .container{
      
       margin: 0 auto;
@@ -116,6 +117,7 @@ export default {
           background-color: $colorWhite;
           border-radius: 10px;
           padding: 20px;
+          min-height: 180px;
 
           &:hover .fa-arrow-right{
             background-color:#7cd1d1;

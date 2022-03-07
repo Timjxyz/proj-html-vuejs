@@ -4,7 +4,7 @@
         <div class="header-nav d-flex">
             <!-- Parte sinista con logo -->
             <div class="logo">
-                <img src="../../assets/img/logo.png" alt="">
+                <img src="../../../assets/img/logo.png" alt="">
             </div>
 
             <!-- Parte destra con barra di navigazione -->
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import NavHeader from '../partials/NavHeader.vue'
+import NavHeader from './NavHeader.vue'
 
 export default {
     name:'HeaderBottom',
@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/style-scss/variables.scss";
+@import "../../../assets/style-scss/variables.scss";
     .header-bottom{
         padding-top: 20px;
        
@@ -127,7 +127,7 @@ export default {
              position: relative;
             .jumbotron-bg{
                min-height: 635px;
-               background-image: url('../../assets/img/bg-parallax.png');
+               background-image: url('../../../assets/img/bg-parallax.png');
                background-size: cover;
                background-position: center;
                margin: 0px  50px;

@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/style-scss/variables.scss";
+@import "../../../assets/style-scss/variables.scss";
 
 
     .header-top{

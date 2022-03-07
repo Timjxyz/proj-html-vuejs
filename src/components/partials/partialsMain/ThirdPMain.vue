@@ -24,7 +24,7 @@
           <div class="box-container">
               <!-- Box 1 -->
                 <div class="box">
-                    <img src="../../assets/img/project-1.jpg" alt="">
+                    <img src="../../../assets/img/project-1.jpg" alt="">
                     <a href="#">
                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -35,7 +35,7 @@
                 </div>
                  <!-- Box 2 -->
                 <div class="box">
-                    <img src="../../assets/img/project-2.jpg" alt="">
+                    <img src="../../../assets/img/project-2.jpg" alt="">
                     <a href="#">
                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -46,7 +46,7 @@
                 </div>
                  <!-- Box 3 -->
                 <div class="box">
-                    <img src="../../assets/img/project-3.jpg" alt="">
+                    <img src="../../../assets/img/project-3.jpg" alt="">
                     <a href="#">
                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -57,7 +57,7 @@
                 </div>
                  <!-- Box 4 -->
                 <div class="box">
-                    <img src="../../assets/img/project-4.jpg" alt="">
+                    <img src="../../../assets/img/project-4.jpg" alt="">
                     <a href="#">
                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -68,7 +68,7 @@
                 </div>
                  <!-- Box 5 -->
                 <div class="box">
-                    <img src="../../assets/img/project-5.jpg" alt="">
+                    <img src="../../../assets/img/project-5.jpg" alt="">
                     <a href="#">
                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -79,7 +79,7 @@
                 </div>
                 <!-- Box 6 -->
                 <div class="box">
-                    <img src="../../assets/img/project-6.jpg" alt="">
+                    <img src="../../../assets/img/project-6.jpg" alt="">
                     <a href="#">
                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -100,7 +100,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/style-scss/variables.scss";
+@import "../../../assets/style-scss/variables.scss";
     .project{
         min-height: 600px;
         margin-top: 100px;

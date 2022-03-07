@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import FooterTop from './partials/FooterTop.vue';
-import FooterBottom from './partials/FooterBottom.vue';
+import FooterTop from './partials/partialsFooter/FooterTop.vue';
+import FooterBottom from './partials/partialsFooter/FooterBottom.vue';
 export default {
     name:'MyFooter',
     components:{

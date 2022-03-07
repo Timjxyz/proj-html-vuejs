@@ -18,7 +18,7 @@
             <div class="box">
                 <form class="name-form">
                     <input type="text" placeholder="Name">
-                    <img src="../../assets/img/image (1).png" alt="">
+                    <img src="../../../assets/img/image (1).png" alt="">
                 </form>
             </div>
             <div class="box">
@@ -29,7 +29,7 @@
             </div>
             <div class="box">
                <form>
-                    <input type="number" placeholder="Phone">
+                    <input type="text" placeholder="Phone">
                 </form>
                 
             </div>
@@ -98,7 +98,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    @import "../../assets/style-scss/variables.scss";
+    @import "../../../assets/style-scss/variables.scss";
     .form{
         margin: 100px 0px;
         display: flex;

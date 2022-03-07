@@ -49,7 +49,7 @@
 
     </div>
     <div class="right-container">
-        <img src="../../assets/img/about-4.jpg" alt="">
+        <img src="../../../assets/img/about-4.jpg" alt="">
     </div>
 
   </section>
@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/style-scss/variables.scss";
+@import "../../../assets/style-scss/variables.scss";
     .company{
         height: 700px;
         background-color:#111117;
